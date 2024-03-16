@@ -64,3 +64,25 @@
         max-width: 100%;
     }
 }
+
+.contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+.contenedorNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.imgNosotros {
+    max-width: 100%;
+    
+}

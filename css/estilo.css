@@ -372,6 +372,23 @@ button[type=button] {
   max-width: 100%;
 }
 
+.contenedorPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedorNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.imgNosotros {
+  max-width: 100%;
+}
+
 .faq-section {
   max-width: 600px;
   margin: 0 auto;
@@ -419,7 +436,7 @@ button[type=button] {
 }
 
 .tarjeta {
-  width: 30%;
+  width: 100%;
   /* ajusta el ancho según sea necesario */
   padding: 20px;
   margin-bottom: 20px;
@@ -428,7 +445,7 @@ button[type=button] {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .tarjeta img {
-  width: 100%;
+  width: 35%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }

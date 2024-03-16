@@ -7,7 +7,7 @@
 }
 
 .tarjeta {
-    width: 30%;
+    width: 100%;
 
     /* ajusta el ancho según sea necesario */
     padding: 20px;
@@ -17,7 +17,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     img {
-        width: 100%;
+        width: 35%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }

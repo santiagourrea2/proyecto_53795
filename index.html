@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liga de natación del Huila</title>
+    <meta name="description" content="Bienvenidos a la liga de natación del Huila, entidad deportiva del sur colombiano en pro del desarrollo de las actividades acuaticas en especial natación carreras.">
     <link rel="stylesheet" href="css/estilo.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,15 +22,23 @@
             <img class="Logo" src="assets/img/logoliga.jpg" alt="Logo LinaHuil">
         </a>
 
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/nosotros.html">Nosotros</a></li>
-                <li><a href="pages/torneos.html">Torneos</a></li>
-                <li><a href="pages/noticias.html">Noticias</a></li>
-                <li><a href="pages/inscripciones.html">Inscripciones</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/torneos.html">Torneos</a></li>
+                <li><a href="./pages/noticias.html">Noticias</a></li>
+                <li><a href="./pages/inscripciones.html">Inscripciones</a></li>
             </ul>
         </nav>
+    
+        <script>
+            function toggleNav() {
+                var menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+        </script>
 
         <button class="boton d-block">¡Todo o nada!</button>
 

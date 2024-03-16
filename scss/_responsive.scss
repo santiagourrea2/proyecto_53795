@@ -1,0 +1,39 @@
+/*Ajustes específicos para la vista móvil*/
+/*0 hasta 768px*/
+
+@media (max-width: 768px) {
+    .contenedorNosotros {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tarjeta {
+        width: 100%;
+
+        /* Las tarjetas ocuparán todo el ancho de la pantalla en dispositivos móviles */
+    }
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+
+        /* Muestra la barra de navegación en dispositivos móviles */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        display: none;
+
+        /* Oculta el menú por defecto en dispositivos móviles */
+    }
+
+    .nav-toggle {
+        display: block;
+
+        /* Muestra el botón de hamburguesa en dispositivos móviles */
+    }
+}

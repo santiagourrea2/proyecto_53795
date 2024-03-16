@@ -1,0 +1,129 @@
+/* Header */
+
+@mixin anclas {
+    text-decoration: none;
+    color: black;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0px 2px 4px rgba(255, 0, 8, 0.2);
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-oscuro;
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-size: 2.5rem;
+    }
+}
+
+.verde {
+    color: $color-verde;
+}
+
+.boton {
+    background-color: #7AB730;
+    color: #fafafa;
+    font-weight: 700;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+
+    &:hover {
+        background-color: $color-verdeoscuro;
+        color: $color-blanco;
+        cursor: pointer;
+    }
+}
+
+.encabezado {
+    &.boton {
+        display: center;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            margin: 10px;
+            @include anclas;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: #7AB730;
+            }
+        }
+    }
+}
+
+.Logo {
+    width: 100px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.navbar {
+    background-color: #494444;
+    padding: 10px;
+    display: none;
+
+    /* Oculta la barra de navegación por defecto */
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+
+    /* Muestra el botón de hamburguesa por defecto */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    &.active {
+        display: block;
+
+        /* Muestra el menú cuando está activo */
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: block;
+
+        &:hover {
+            background-color: #494444;
+        }
+    }
+}

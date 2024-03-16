@@ -10,22 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nombre+de+la+fuente" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-        /* Estilos para hacer el iframe responsive */
-        .responsive-iframe-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* Proporción 16:9 para un iframe responsive */
-        }
-
-        .responsive-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <link rel="icon" href="../logoliga.ico" type="image/x-icon">
+    
 </head>
 
 <body>
@@ -37,15 +23,26 @@
             <img class="Logo" src="../assets/img/logoliga.jpg" alt="Logo LinaHuil">
         </a>
 
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="torneos.html">Torneos</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="inscripciones.html">Inscripciones</a></li>
+                <li><a href="/pages/nosotros.html">Nosotros</a></li>
+                <li><a href="/pages/torneos.html">Torneos</a></li>
+                <li><a href="/pages/noticias.html">Noticias</a></li>
+                <li><a href="/pages/inscripciones.html">Inscripciones</a></li>
             </ul>
         </nav>
+    
+        <script>
+            function toggleNav() {
+                var menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+        </script>
+        </script>
+
+
 
         <button class="boton d-block">¡Todo o nada!</button>
 
@@ -58,46 +55,44 @@
 
         <h2>Contactanos</h2>
 
-
-        <center>
-
-     <form action="../index.html">
-        <div>
-
-            <label for="name">Nombre:</label>
-            <input type="text" placeholder="Digite su nombre completo" id="name" name="name" required>
+        <form action="#" method="post">
+            <div class="tarjeta1">
+            <div class="campo">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required
+              placeholder="Andrés Gómez">
+            </div>
+            <div class="campo">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required
+              placeholder="ligahuil@gmail.com">
+            </div>
             
+            <div class="campo">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <div class="campo">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea>
+              </div>
+            <div>
+              <input type="submit" value="Enviar">
+              <button type="button" onclick="borrarFormulario()">Borrar</button>
+            </div>
         </div>
-        <br>
-        <div>
+    
+          </form>
+        
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="mail" placeholder="ligahuil@gmail.com" required>
-
-        </div>
-        <br>
-        <div>
-
-            <textarea name="comentario" id="comentario" cols="30"  rows="10" placeholder="Cuentenos su experiencia"></textarea>
-
-        </div>
-
-        <div>
-
-            <input type="reset" value="borrar">
-            <input type="submit" value="enviar">
-
-
-        </div>
-
-     </form>
+     
      
      <div class="responsive-iframe-container">
         <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63753.28192303194!2d-75.35520985136719!3d2.9362947000000204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b746905ccebc9%3A0xbd73d5e58d01e440!2sPiscina%20Villa%20Ol%C3%ADmpica!5e0!3m2!1ses!2sco!4v1709311746133!5m2!1ses!2sco" frameborder="0" allowfullscreen></iframe>
     </div>
 
 
-    </center>
+    
 
     </main>
 

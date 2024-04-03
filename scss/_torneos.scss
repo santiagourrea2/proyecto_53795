@@ -1,0 +1,114 @@
+/*Torneos*/
+
+.torneos-container {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-bottom: 30px;
+}
+
+.toggle {
+    display: none;
+}
+
+.contenido-torneo {
+    display: none;
+    padding: 0 18px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    text-align: center;
+}
+
+.toggle:checked+.titulo-torneo {
+    background-color: gray;
+
+    +.contenido-torneo {
+        display: block;
+    }
+}
+
+.contenido-torneo {
+    img {
+        width: 50%;
+        max-width: 50%;
+        border-radius: 5px;
+        aspect-ratio: 3/3;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+}
+
+.titulo-torneo {
+    background-color: greenyellow;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 35px;
+
+    iframe {
+        width: auto;
+        height: 350px;
+    }
+}
+
+.torneoo-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+        aspect-ratio: 4/3;
+    }
+
+    h2,
+    h3 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}

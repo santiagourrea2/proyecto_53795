@@ -1,0 +1,193 @@
+/* Estilos de la sección de tipo de eventos */
+
+.tipo_eventos {
+    background-color: yellowgreen;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: gray;
+    }
+  
+    h3 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    li {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+  }
+  
+  /* Animación de entrada al hacer scroll */
+  @media screen and (min-width: 768px) {
+    .tipo_eventos {
+      li {
+        transition-delay: 0.3s;
+  
+        &:nth-child(2) {
+          transition-delay: 0.5s;
+        }
+      }
+  
+      &:hover li {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  /* Estilos del main index */
+  
+  .contenedorCompeticiones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Estilos de las tarjetas */
+  
+  .tarjeta {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: calc(33.33% - 20px);
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    a {
+      display: block;
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px;
+    }
+  
+    p {
+      color: #666;
+      padding: 0 10px 10px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 1200px) {
+    .tarjeta {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tarjeta {
+      width: calc(100% - 20px);
+    }
+  }
+  
+  .tarjetaextra {
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: calc(33.33% - 20px);
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    a {
+      display: block;
+      color: #00FF00;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px;
+    }
+  
+    p {
+      color: #000000;
+      padding: 0 10px 10px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 1200px) {
+    .tarjetaextra {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tarjetaextra {
+      width: calc(100% - 20px);
+    }
+  }
+  
+  /* Estilos de la sección de logos */
+  
+  .logos-section {
+    text-align: center;
+    padding: 20px;
+  
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Estilos de los logos */
+  
+  .logo {
+    display: inline-block;
+    margin-right: 20px;
+    max-width: 150px;
+    vertical-align: middle;
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      aspect-ratio: 3/3;
+    }
+  }
+  

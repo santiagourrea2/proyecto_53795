@@ -1,0 +1,130 @@
+/*Noticias*/
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.news-item {
+    width: calc(50% - 20px);
+    max-width: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+.news-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news-text {
+    margin-bottom: 10px;
+}
+
+.news-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        width: 100%;
+    }
+}
+
+/*Galeria*/
+
+.gallery {
+    text-align: center;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px;
+    padding: 55px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.gallery-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+    }
+}
+
+/*Foro*/
+
+.forum {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.forum-header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: antiquewhite;
+}
+
+.forum-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.forum-category {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.forum-topic {
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.forum-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: antiquewhite;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.forum-topic a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        color: antiquewhite;
+    }
+}

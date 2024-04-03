@@ -1,0 +1,68 @@
+/* Estilos del encabezado */
+
+@mixin anclas {
+    text-decoration: none;
+    color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+.encabezado {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+  }
+  
+  .verde {
+    color: $color-verde;
+  }
+  
+  .navbar {
+    margin-top: 20px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  
+    li {
+      display: inline;
+      margin-right: 20px;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      a {
+        color: $color-blanco;
+        @include anclas;
+        font-size: 16px;
+        padding: 5px 10px;
+        border: 2px solid transparent;
+        transition: color 0.3s ease, border-color 0.3s ease;
+  
+        &:hover {
+        @include anclas;
+        @include anclas;
+        }
+      }
+    }
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .encabezado h1 {
+      font-size: 20px;
+    }
+  
+    .menu li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  

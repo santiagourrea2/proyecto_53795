@@ -1,0 +1,76 @@
+/* Estilos del banner */
+
+.banner {
+    background-image: url("../assets/img/bannerr.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgb(251, 251, 251);
+    padding: 50px 20px;
+    text-align: center;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.bannerContenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner {
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+        .verde {
+            color: #00FF00;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    h5 {
+        font-size: 16px;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.buttonn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #ff9900;
+    }
+}
+
+.button_text {
+    font-size: 18px;
+}
+
+.button_lg {
+    position: relative;
+}
+
+.button_sl {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.buttonn:hover .button_sl {
+    transform: scaleY(1);
+}
